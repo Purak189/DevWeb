@@ -24,10 +24,25 @@ var nombreArticulos = articulos.map(function(articulo){
 nombreArticulos
 
 //Metodo find(), devuelve el primer elemento con una caracteristica
-//de filtrado
+//de filtrado, no devuelve un arreglo
 var encuentraArticulo = articulos.find(function(articulo){
     return articulo.costo === 500;
 });
 encuentraArticulo
 
-//Metodo foreach(),
+//Metodo foreach(), sirve para recorrer todos los elementos
+//de un arreglo y poder hacer algo respecto a una funcion
+//por cada dato
+articulos.forEach(function(articulo) {
+    console.log(articulo.nombre);
+});
+
+//Metodo some(), devuelve un booleano para elementos
+//que cumplan con la condicion
+var articulosBaratos = articulos.some(function(articulo){
+    return articulo.costo <= 700;
+});
+articulosBaratos;
+
+console.log(typeof(articulos));
+console.log(4 == "4")
