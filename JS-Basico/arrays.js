@@ -21,3 +21,4 @@ frutas.shift();
 console.log(frutas);
 //Metodo para acceder a la posicion de un elemento del arreglo
 console.log(frutas.indexOf("Pera"));
+//Comentario nuevo si
