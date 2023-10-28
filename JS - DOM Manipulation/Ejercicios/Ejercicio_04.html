@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Investigador: Jair Velasquez</p>
+    <div id="demo"></div>
+    <script>
+        let numeros = prompt('Ingrese la cantidad de numeros a evaluar');
+        numeros = parseInt(numeros);
+
+        var max = 20, min = 1, n;
+
+        var text = '';
+
+        let cambio = document.getElementById("demo");
+
+        for (i=0; i < numeros; i++){
+            n = parseInt(Math.random() * (max-min+1) + min);
+            text += n + ' ';
+            //Histograma
+            text += '*'.repeat(n);
+            text += "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>
